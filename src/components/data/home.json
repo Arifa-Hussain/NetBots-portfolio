@@ -1,0 +1,316 @@
+{
+  "homeData": [
+    {
+      "id": 1,
+      "title": "Leading companies trust us",
+      "description": "We add development capacity to tech teams. Our value isn’t limited to building teams but is equally distributed across the project lifecycle. We are a custom software development company that guarantees the successful delivery of your project.",
+      "video": "/homeImages/vid.mp4"
+    },
+    {
+      "id": 2,
+      "image1": "/homeImages/c1.png"
+    },
+    {
+      "id": 3,
+      "image1": "/homeImages/c2.png"
+    },
+    {
+      "id": 4,
+      "image1": "/homeImages/c3.png"
+    },
+    {
+      "id": 5,
+      "image1": "/homeImages/c4.png"
+    },
+    {
+      "id": 6,
+      "image1": "/homeImages/c5.png"
+    },
+    {
+      "id": 7,
+      "image1": "/homeImages/c6.png"
+    },
+    {
+      "id": 8,
+      "image1": "/homeImages/c7.png"
+    },
+    {
+      "id": 9,
+      "title": " ",
+      "description": ""
+    },
+    {
+      "id": 10,
+      "image2": "/homeImages/client1.jpg",
+      "rank": "stars",
+      "name": "Imran Khan",
+      "designation": "Software Engineer"
+    },
+    {
+      "id": 11,
+      "image2": "/homeImages/client2.jpg",
+      "rank": "stars",
+      "name": "Ayesha Ahmed",
+      "designation": "Project Manager"
+    },
+    {
+      "id": 12,
+      "image2": "/homeImages/client3.jpg",
+      "rank": "stars",
+      "name": "Muhammad Ali",
+      "designation": "UI/UX Designer"
+    },
+    {
+      "id": 13,
+      "image2": "/homeImages/client4.jpg",
+      "rank": "stars",
+      "name": "Sara Malik",
+      "designation": "Product Owner"
+    },
+    {
+      "id": 14,
+      "image2": "/homeImages/client5.jpg",
+      "rank": "stars",
+      "name": "Ahmed Raza",
+      "designation": "Data Scientist"
+    },
+    {
+      "id": 15,
+      "image": "/homeImages/project1.jpg",
+      "heading": "Website Design for SCFC Canada",
+      "description": "Born out of a vision, a single-minded objective that puts service before anything else, Swift Clearance and Forwarding Corp. surging forth to deliver the best services in the shipping and logistics scenario. Its meteoric rise stems out of a solid foundation. The management boasts of over 20 years of rich and varied experience in the shipping and freight forwarding industry."
+    },
+    {
+      "id": 16,
+      "image": "/homeImages/project2.jpg",
+      "heading": "Website Design for SCFC Canada",
+      "description": "Born out of a vision, a single-minded objective that puts service before anything else, Swift Clearance and Forwarding Corp. surging forth to deliver the best services in the shipping and logistics scenario. Its meteoric rise stems out of a solid foundation. The management boasts of over 20 years of rich and varied experience in the shipping and freight forwarding industry."
+    },
+    {
+      "id": 17,
+      "image": "/homeImages/project3.jpg",
+      "heading": "Website Design for SCFC Canada",
+      "description": "Born out of a vision, a single-minded objective that puts service before anything else, Swift Clearance and Forwarding Corp. surging forth to deliver the best services in the shipping and logistics scenario. Its meteoric rise stems out of a solid foundation. The management boasts of over 20 years of rich and varied experience in the shipping and freight forwarding industry."
+    },
+    {
+      "id": 18,
+      "image": "/homeImages/sw.jpg",
+      "heading": "Build the right team to scale",
+      "description": "Finding the right talent is not easy. We help you find the talent that suits your needs, follows your processes, and sticks with you long term (not the case with freelancers).",
+      "description2": "Our delivery model helps you cut costs and deliver within budget.",
+      "description3": "Simform is quick to identify larger problems with the software, so we decided to expand our scope to build new modules."
+    },
+    {
+      "id": 19,
+      "image": "/homeImages/sw.jpg",
+      "heading": "Build the right team to scale",
+      "description": "Finding the right talent is not easy. We help you find the talent that suits your needs, follows your processes, and sticks with you long term (not the case with freelancers).",
+      "description2": "Our delivery model helps you cut costs and deliver within budget.",
+      "description3": "Simform is quick to identify larger problems with the software, so we decided to expand our scope to build new modules."
+    },
+    {
+      "id": 20,
+      "image": "/homeImages/sw.jpg",
+      "heading": "Build the right team to scale",
+      "description": "Finding the right talent is not easy. We help you find the talent that suits your needs, follows your processes, and sticks with you long term (not the case with freelancers).",
+      "description2": "Our delivery model helps you cut costs and deliver within budget.",
+      "description3": "Simform is quick to identify larger problems with the software, so we decided to expand our scope to build new modules."
+    },
+    {
+      "id": 21,
+      "image": "/homeImages/p1.png",
+      "heading": "UX Driven Engineering",
+      "description": "Unlike other companies, we are a UX first development company. Projects are driven by designers and they make sure design and experiences translate to code."
+    },
+    {
+      "id": 22,
+      "image": "/homeImages/p2.png",
+      "heading": "Developing Shared Understanding",
+      "description": "Unlike other companies, we are a UX first development company. Projects are driven by designers and they make sure design and experiences translate to code."
+    },
+    {
+      "id": 23,
+      "image": "/homeImages/p3.png",
+      "heading": "Proven Experience and Expertise",
+      "description": "Unlike other companies, we are a UX first development company. Projects are driven by designers and they make sure design and experiences translate to code."
+    },
+    {
+      "id": 24,
+      "image": "/homeImages/p4.png",
+      "heading": "Security & Intellectual Property (IP)",
+      "description": "Unlike other companies, we are a UX first development company. Projects are driven by designers and they make sure design and experiences translate to code."
+    },
+    {
+      "id": 25,
+      "image": "/homeImages/p5.png",
+      "heading": "Code Reviews",
+      "description": "Unlike other companies, we are a UX first development company. Projects are driven by designers and they make sure design and experiences translate to code."
+    },
+    {
+      "id": 26,
+      "image": "/homeImages/p6.png",
+      "heading": "Quality Assurance & Testing",
+      "description": "Unlike other companies, we are a UX first development company. Projects are driven by designers and they make sure design and experiences translate to code."
+    },
+    {
+      "id": 27,
+      "image": "/homeImages/Backend/njs.jpg"
+    },
+    {
+      "id": 28,
+      "image": "/homeImages/"
+    },
+    {
+      "id": 29,
+      "image": "/homeImages/mysq.png"
+    },
+    {
+      "id": 30,
+      "image": "/homeImages/java.png"
+    },
+    {
+      "id": 31,
+      "image": "/homeImages/net.png"
+    },
+    {
+      "id": 32,
+      "image": "/homeImages/py.png"
+    },
+    {
+      "id": 33,
+      "image": "/homeImages/rails.jpg"
+    },
+    {
+      "id": 34,
+      "image": "/homeImages/dm.webp"
+    },
+    {
+      "id": 35,
+      "image": "/homeImages/mongo.png"
+    },
+    {
+      "id": 36,
+      "heading": "#1 Assemble the right team",
+      "description":"We handle all aspects of vetting and choosing the right team that you don't have the time, expertise, or desire to do."
+    },
+    {
+      "id": 37,
+      "heading": "#3 Tech architecture",
+      "description":"We break monolithic apps into microservices. Decoupling the code allows teams to move faster and more independently"
+    },
+    {
+      "id": 38,
+      "heading": "#5 Code reviews",
+      "description":"Code reviews before release help detect issues like memory leaks, file leaks, performance signs, and general bad smells"
+    },
+    {
+      "id": 39,
+      "heading": "#2 Sprint planning",
+      "description":"Sprint roadmap is a collective planning effort. Team members collaborate to clarify items and ensure shared understanding."
+    },
+   
+    {
+      "id": 40,
+      "heading": "#4 Standups & weekly demos",
+      "description":"Standups, weekly demos, and weekly reviews make sure everyone is on the same page and can raise their concerns."
+    },
+    {
+      "id": 41,
+      "heading": "#6 Iterative delivery",
+      "description":"We divide the implementation process into several checkpoints rather than a single deadline."
+    },
+    {
+      "id": 42,
+      "image": "/homeImages/r1.jpeg",
+      "description":"How to Build a Scalable Application up to 1 Million Users on AWS"
+    },
+    {
+      "id": 43,
+      "image": "/homeImages/r2.jpeg",
+      "description":"How to Build a Scalable Application up to 1 Million Users on AWS"
+    },
+    {
+      "id": 44,
+      "image": "/homeImages/r3.jpeg",
+      "description":"How to Build a Scalable Application up to 1 Million Users on AWS"
+    },
+    {
+      "id": 45,
+      "image": "/homeImages/r4.jpeg",
+      "description":"How to Build a Scalable Application up to 1 Million Users on AWS"
+    },
+    {
+      "id": 46,
+      "image": "/homeImages/r5.jpeg",
+      "description":"How to Build a Scalable Application up to 1 Million Users on AWS"
+    },
+    {
+      "id": 47,
+      "image": "/homeImages/forntend/cs.png"
+    },
+    {
+      "id": 48,
+      "image": "/homeImages/forntend/html.png"
+    },
+    {
+      "id": 49,
+      "image": "/homeImages/forntend/js.png"
+    },
+    {
+      "id": 50,
+      "image": "/homeImages/forntend/react.png"
+    },
+    {
+      "id": 51,
+      "image": "/homeImages/db/maria.webp"
+    },
+    {
+      "id": 52,
+      "image": "/homeImages/db/mongo.png"
+    },
+    {
+      "id": 53,
+      "image": "/homeImages/db/mysql.png"
+    },
+    {
+      "id": 54,
+      "image": "/homeImages/cms/Drupal.webp"
+    },
+    {
+      "id": 55,
+      "image": "/homeImages/cms/joomla.png"
+    },
+    {
+      "id": 56,
+      "image": "/homeImages/cms/wp.png"
+    },
+    {
+      "id": 57,
+      "image": "/homeImages/cloudtesing/cloudqa.jpeg"
+    },
+    {
+      "id": 58,
+      "image": "/homeImages/cloudtesing/ct.png"
+    },
+    {
+      "id": 59,
+      "image": "/homeImages/cloudtesing/ne.png"
+    },
+    {
+      "id": 60,
+      "image": "/homeImages/cloudtesing/ts.jpg"
+    },
+    {
+      "id": 61,
+      "image": "/homeImages/devops/git.png"
+    },
+    {
+      "id": 62,
+      "image": "/homeImages/devops/GitHub.png"
+    },
+    {
+      "id": 63,
+      "image": "/homeImages/devops/gitlab.png"
+    }
+  ]
+}

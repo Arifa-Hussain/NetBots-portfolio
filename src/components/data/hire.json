@@ -1,0 +1,32 @@
+{
+  "jobs": [
+    {
+      "title": "Full Stack Developer",
+      "description": "We are looking for a talented Full Stack Developer to join our team.",
+      "responsibilities": [
+        "Develop and maintain web applications.",
+        "Work with front-end and back-end technologies.",
+        "Ensure high performance and responsiveness."
+      ]
+    },
+    {
+      "title": "Graphic Designer",
+      "description": "We are seeking a creative Graphic Designer to create engaging visuals.",
+      "responsibilities": [
+        "Design marketing materials and branding assets.",
+        "Collaborate with the team to create compelling visuals.",
+        "Ensure consistency in design elements."
+      ]
+    }
+  ],
+  "formFields": [
+    { "label": "name", "type": "text", "placeholder": "Enter your full name" },
+    { "label": "email", "type": "email", "placeholder": "Enter your email" },
+    { "label": "phone", "type": "text", "placeholder": "Enter your phone number" },
+    { "label": "designation", "type": "text", "placeholder": "Select Position" },
+    
+    { "label": "cv", "type": "file" },
+    { "label": "coverLetter", "type": "file" },
+    { "label": "expectedSalary", "type": "text", "placeholder": "Enter expected salary" }
+  ]
+}

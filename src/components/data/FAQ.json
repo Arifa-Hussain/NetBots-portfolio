@@ -1,0 +1,30 @@
+{
+    "FaqData": [
+      {
+        "id": 1,
+        "heading": "What is the MERN Stack, and why is it important for modern web development?",
+        "description": "The MERN Stack is a collection of technologies used to build full-stack web applications. It consists of:\n\n- MongoDB: A NoSQL database for storing application data.\n- Express.js: A web application framework for Node.js, used to build APIs.\n- React.js: A JavaScript library for building dynamic, interactive user interfaces.\n- Node.js: A runtime environment that allows you to run JavaScript on the server-side.\n\nTogether, these technologies provide a powerful and efficient way to build scalable, fast, and secure web applications, making it a popular choice for modern web development."
+      },
+      {
+        "id": 2,
+        "heading": "How does this course help me learn the MERN Stack?",
+        "description": "This course is designed to guide you through both the fundamentals and advanced concepts of each technology in the MERN Stack. You will:\n\n- Learn MongoDB: Understand how to design databases, perform CRUD operations, and use advanced querying techniques.\n- Master Express.js: Develop backend APIs with Express, including routing, middleware, and building RESTful APIs.\n- Get hands-on with React.js: Create dynamic user interfaces with React, manage state, and connect your frontend to backend APIs.\n- Use Node.js effectively: Leverage Node.js to run JavaScript on the server-side, handle asynchronous tasks, and integrate MongoDB with Express.\n\nThe course also includes building full-stack projects, focusing on creating real-world applications with all these technologies working together."
+      },
+      {
+        "id": 3,
+        "heading": "Do I need any prior experience in programming to take this course?",
+        "description": "No prior experience is required, but a basic understanding of JavaScript is recommended to get the most out of this course. If you're new to web development, the course covers foundational concepts in HTML, CSS, and JavaScript, ensuring that you can progress from beginner to advanced topics seamlessly."
+      },
+      {
+        "id": 4,
+        "heading": "Will I get a chance to build real-world applications during this course?",
+        "description": "Yes, absolutely! One of the key components of this course is to help you apply the knowledge learned by building real-world projects. You will work on building full-stack applications like:\n\n- E-commerce websites\n- Social media platforms\n- Blog platforms\n\nThese projects will help you showcase your skills in building scalable, maintainable, and production-ready applications. By the end of the course, you'll have a complete project to add to your portfolio."
+      },
+      {
+        "id": 5,
+        "heading": "What deployment platforms will I learn to use for my applications?",
+        "description": "This course covers deployment to popular cloud platforms such as Heroku, Vercel, and AWS. You will learn how to:\n\n- Prepare your application for production.\n- Set up environment variables.\n- Deploy your full-stack application, ensuring that it's accessible to users worldwide.\n\nAdditionally, you'll understand the best practices for optimizing your application for real-world use, including scaling and monitoring once it's live."
+      }
+    ]
+  }
+  

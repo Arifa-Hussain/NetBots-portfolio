@@ -1,0 +1,53 @@
+{
+  "pricingDetail": [
+    {
+      "id": "1",
+      "title": "What We Offer",
+      "heading": "Website Development in Pakistan",
+      "description": "We are the Best Software and Web Development Company in Skardu, Pakistan. We specialize in MERN Stack and WordPress development, creating visually appealing and functional websites.",
+      "services": [
+        "Standard websites",
+        "Ecommerce websites",
+        "Booking websites",
+        "Catalog websites",
+        "Online Learning websites"
+      ],
+      "buttonText": "Contact Us →",
+      "image": "/pricingDetail/im1.webp"
+    },
+    {
+      "id": "2",
+      "title": "What's Included in Our Web Design and Development Packages?",
+      "description": "Responsive web design refers to the process of designing and developing websites that adapt to different screen sizes and devices, ensuring an optimal viewing experience for users. At Bit Technologies, we specialize in responsive web design and develop websites that offer a seamless user experience across all devices, from desktops to smartphones.",
+      "features": [
+        "Mobile-friendly",
+        "Edit anytime",
+        "Domain & email",
+        "Bespoke design",
+        "Free optimization",
+        "Fast & reliable"
+      ],
+      "image": "/pricingDetail/im2.webp"
+    },
+    {
+      "id": "3",
+      "title": "What's Excluded in Our Web Design and Development Packages?",
+      "description": "While our web design and development packages offer a range of features, some services are not included:",
+      "exclusions": [
+        "Custom Mobile Apps – We don’t create custom mobile applications, only responsive websites.",
+        "Advanced AI Features – We don’t offer AI-powered chatbots or machine learning features.",
+        "24/7 Support – We don’t provide 24/7 customer support or unlimited free updates after launch."
+      ],
+      "image": "/pricingDetail/im3.webp"
+    },
+    {
+      "id": "4",
+      "title": "Terms and Conditions",
+      "description1": " By using our website development services, you agree to the following terms and conditions:",
+      "description2":"All website development projects require an initial 50% payment before work begins.",
+      "description3":"Revisions are limited to 3 rounds; additional revisions will be charged separately.",
+      "description4":"Website maintenance is only included if specified in the selected pricing plan.",
+      "description5":" Please review our full Terms and Conditions for more details. Contact us for any inquiries."
+    }
+  ]
+}

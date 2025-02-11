@@ -1,0 +1,62 @@
+{
+    "ServicesDetail": [
+        {
+            "id": 1,
+            "heading": "Code For The Next Level Development",
+            "description": "NetBots, a very well renowned web development company currently working in Pakistan. We’re bunch of guys who’re adept and skillful web designers and we are master of this field. Site advancement has been an issue and we as web Development Company working enthusiastically to come up with first-rate solution. We’ll keep on working until we get the job done. Here at Elexoft, you’ll get any web of your choice and it’s our responsibility to give you our best through our website maintenance services."
+        },
+        {
+            "id": 2,
+            "heading": "Professional And Leading Web Design And Development Company",
+            "description":"NetBots is one of the leading web design and development company in Pakistan. we provide tailored end-to-end web design & development services, which are rich in creativity, functional, and highly flexible for your unique needs and preferences.We offer extraordinary services in web designing to create brand’s visibility. Our work helped us gain the recognition as best web design company and managed to create space in international industry as well.Our experts create most affordable web design and development services considering the size of every business. We hire the best resources to help you create flexible, user friendly, and trendsetting website in the market. Elexoft Technologies excells in web designing and development because we dive into customers’ business strategy and requirements to help create the competitive online presence."
+        },
+        {
+            "id": 3,
+            "heading": "Content Management System",
+            "description":"Content management system (CMS) is considered a difficult task to maintain but we’re making it real simple by implementing our own techniques. Here our clients can survey and revise the content generated and this has done because of our web developers. By CMS web development, you can reach out to us.",
+            "image":"/servicesDetailImg/cms.png"
+        },
+        {
+            "id": 4,
+            "image":"/servicesDetailImg/crm_pic.png",
+            "heading": "Customer Relationship Management (CRM)",
+            "description":"A customer relationship management (CRM) is a tool allowing you to have better management of your business contacts. It offers the possibility of having a panel of marketing solutions in order to capture and build customer loyalty to your brand. Right now, a very good factor and a guarantee of reputation for a company is to ensure a unique relationship with its customers. At Elexoft, we set up a CRM based on your activity by defining the indicators that will be important to take into account. You will be able to process and analyze data relating to your customers and define good business planning.",
+            "heading2":"Our CRM expertise",
+            "point1":"After Sales",
+            "point2":"Identification of Customer Needs",
+            "point3":"Customer Relationship",
+            "point4":"Improved Sales",
+            "point5":"Customer Follow-up"
+        },
+        {
+            "id":5,
+            "image":"/servicesDetailImg/p1.gif",
+            "heading":"Online store",
+            "description":"A platform for an online sales business. It requires the development of a complex structure, several mandatory sections ('Delivery', 'Payment', 'Contacts', etc). Consists of dozens of pages with descriptions of products requiring promotion."
+        },
+        {
+            "id":6,
+            "image":"/servicesDetailImg/p2.gif",
+            "heading":"Corporate website",
+            "description":"A platform for an online sales business. It requires the development of a complex structure, several mandatory sections ('Delivery', 'Payment', 'Contacts', etc). Consists of dozens of pages with descriptions of products requiring promotion."
+        },
+        {
+            "id":7,
+            "image":"/servicesDetailImg/p3.gif",
+            "heading":"Portal",
+            "description":"A platform for an online sales business. It requires the development of a complex structure, several mandatory sections ('Delivery', 'Payment', 'Contacts', etc). Consists of dozens of pages with descriptions of products requiring promotion."
+        },
+        {
+            "id":8,
+            "image":"/servicesDetailImg/p4.gif",
+            "heading":"Landing",
+            "description":"A platform for an online sales business. It requires the development of a complex structure, several mandatory sections ('Delivery', 'Payment', 'Contacts', etc). Consists of dozens of pages with descriptions of products requiring promotion."
+        },
+        {
+            "id":9,
+            "image":"/servicesDetailImg/p5.gif",
+            "heading":"Landing",
+            "description":"A platform for an online sales business. It requires the development of a complex structure, several mandatory sections ('Delivery', 'Payment', 'Contacts', etc). Consists of dozens of pages with descriptions of products requiring promotion."
+        }
+    ]
+}

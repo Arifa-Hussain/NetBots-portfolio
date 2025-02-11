@@ -1,0 +1,39 @@
+{
+  "ServicesData": [
+    {
+      "id": 1,
+      "image": "/ServicesImage/web-development.jpg",
+      "heading": "Web Development",
+      "description": "Our website development company works with clients based all over Pakistan and worldwide. A website is the central tool for the visibility of a business on the Internet. An effective website will not only strengthen the attraction, but also the acquisition and retention of new customers. If you have the ambition to accelerate your growth and increase your income, collaborating with our website design agency will",
+      "button": "CONTACT US"
+    },
+    {
+      "id": 2,
+      "image": "/ServicesImage/mobile-app.jpg",
+      "heading": "Mobile Apps",
+      "description": "Our website development company works with clients based all over Pakistan and worldwide. A website is the central tool for the visibility of a business on the Internet. An effective website will not only strengthen the attraction, but also the acquisition and retention of new customers. If you have the ambition to accelerate your growth and increase your income, collaborating with our website design agency will",
+      "button": "CONTACT US"
+    },
+    {
+      "id": 3,
+      "image": "/ServicesImage/graphic-designing.jpg",
+      "heading": "Graphic Designing",
+      "description": "Our website development company works with clients based all over Pakistan and worldwide. A website is the central tool for the visibility of a business on the Internet. An effective website will not only strengthen the attraction, but also the acquisition and retention of new customers. If you have the ambition to accelerate your growth and increase your income, collaborating with our website design agency will",
+      "button": "CONTACT US"
+    },
+    {
+      "id": 4,
+      "image": "/ServicesImage/Digital-Marketing.jpg",
+      "heading": "Digital Marketing",
+      "description": "Our website development company works with clients based all over Pakistan and worldwide. A website is the central tool for the visibility of a business on the Internet. An effective website will not only strengthen the attraction, but also the acquisition and retention of new customers. If you have the ambition to accelerate your growth and increase your income, collaborating with our website design agency will",
+      "button": "CONTACT US"
+    },
+    {
+      "id": 5,
+      "image": "/ServicesImage/devops.jpg",
+      "heading": "DevOps",
+      "description": "Our website development company works with clients based all over Pakistan and worldwide. A website is the central tool for the visibility of a business on the Internet. An effective website will not only strengthen the attraction, but also the acquisition and retention of new customers. If you have the ambition to accelerate your growth and increase your income, collaborating with our website design agency will",
+      "button": "CONTACT US"
+    }
+  ]
+}

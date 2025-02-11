@@ -1,0 +1,52 @@
+{
+    "PortifolioData": [
+
+      {
+        "id": 2,
+        "image":"/projects/im1.png",
+        "heading": "Developed a project for software House",
+        "description": "Our software house project built using the MERN stack (MongoDB, Express.js, React.js, Node.js) focuses on developing a scalable and robust web application designed to streamline business operations and improve collaboration across teams. The project leverages the full potential of the MERN stack to deliver a highly interactive, performant, and secure solution."
+      },
+      {
+        "id": 3,
+        "image":"/projects/im1.png",
+        "heading": "Developed a project for software House",
+        "description": "Our software house project built using the MERN stack (MongoDB, Express.js, React.js, Node.js) focuses on developing a scalable and robust web application designed to streamline business operations and improve collaboration across teams. The project leverages the full potential of the MERN stack to deliver a highly interactive, performant, and secure solution."
+      },
+      {
+        "id": 4,
+        "image":"/projects/mobile.png",
+        "heading": "Developed a project for software House",
+        "description": "Our software house project built using the MERN stack (MongoDB, Express.js, React.js, Node.js) focuses on developing a scalable and robust web application designed to streamline business operations and improve collaboration across teams. The project leverages the full potential of the MERN stack to deliver a highly interactive, performant, and secure solution."
+      },
+      {
+        "id": 5,
+        "image":"/projects/mo2.jpg",
+        "heading": "Developed a project for software House",
+        "description": "Our software house project built using the MERN stack (MongoDB, Express.js, React.js, Node.js) focuses on developing a scalable and robust web application designed to streamline business operations and improve collaboration across teams. The project leverages the full potential of the MERN stack to deliver a highly interactive, performant, and secure solution."
+      },
+      {
+        "id": 6,
+        "image":"/projects/cms.jpg",
+        "heading": "Developed a project for software House",
+        "description": "Our software house project built using the MERN stack (MongoDB, Express.js, React.js, Node.js) focuses on developing a scalable and robust web application designed to streamline business operations and improve collaboration across teams. The project leverages the full potential of the MERN stack to deliver a highly interactive, performant, and secure solution."
+      },
+      {
+        "id": 7,
+        "image":"/projects/g1.jpg",
+        "heading": "Developed a project for software House",
+        "description": "Our software house project built using the MERN stack (MongoDB, Express.js, React.js, Node.js) focuses on developing a scalable and robust web application designed to streamline business operations and improve collaboration across teams. The project leverages the full potential of the MERN stack to deliver a highly interactive, performant, and secure solution."
+      },
+      {
+        "id": 8,
+        "image":"/projects/g2.png",
+        "heading": "Developed a project for software House",
+        "description": "Our software house project built using the MERN stack (MongoDB, Express.js, React.js, Node.js) focuses on developing a scalable and robust web application designed to streamline business operations and improve collaboration across teams. The project leverages the full potential of the MERN stack to deliver a highly interactive, performant, and secure solution."
+      },
+      {
+        "id": 9,
+        "image":"/projects/m1.webp",
+        "heading": "Developed a project for software House",
+        "description": "Our software house project built using the MERN stack (MongoDB, Express.js, React.js, Node.js) focuses on developing a scalable and robust web application designed to streamline business operations and improve collaboration across teams. The project leverages the full potential of the MERN stack to deliver a highly interactive, performant, and secure solution."
+      }
+    ]}

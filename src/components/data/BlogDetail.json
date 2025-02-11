@@ -1,0 +1,93 @@
+{
+    "BlogData": [
+      {
+        "id": 1,
+        "image":"/BlogImages/im1.webp",
+        "heading": "Mern Stack ",
+        "heading1":"Web Development",
+        "description": "The MERN stack, comprising MongoDB, Express.js, React.js, and Node.js, is a powerful framework for building full-stack web applications. MongoDB offers flexible, JSON-like data storage. Express.js is a minimalist framework for building robust web applications and APIs. React.js allows for dynamic and interactive user interfaces. Node.js provides a scalable, efficient JavaScript runtime for server-side development. Together, these technologies create a cohesive ecosystem for modern web application development."
+      },
+      {
+        "id": 2,
+        "description1":"Setup MongoDB database",
+        "description2":"Create Express server",
+        "description3":"Develop React frontend",
+        "description4":"Implement Node.js backend",
+        "description5":"Deploy application",
+        "description6":"Handle authentication"
+      },
+      {
+        "id": 3,
+        "image":"/BlogImages/p1.webp",
+        "description":"The Ultimate Digital Marketing 2 hours webinar+discussion",
+        "date":"2024-05-05T13:19:00.000Z"
+      },
+      {
+        "id": 4,
+        "image":"/BlogImages/p2.webp",
+        "description":"Web Appplication 2 hours webinar+disussion",
+        "date":"2024-05-05T13:19:00.000Z"
+      },
+      {
+        "id": 5,
+        "image":"/BlogImages/p3.webp",
+        "description":"Graphic Designing insights 2 hours webinar+discussion",
+        "date":"2024-05-05T13:19:00.000Z"
+      },
+      {
+        "id": 6,
+        "heading":"How to Grow your Career",
+        "description":"MERN stack development is a lucrative career with growing demand for developers skilled in MongoDB, Express.js, React.js, and Node.js, catering to various projects and enhancing digital business solutions.",
+         "image1":"/BlogImages/b1.avif",
+         "image2":"/BlogImages/b2.avif"
+
+      },
+      {
+        "id": 7,
+        "heading":"Categories",
+        "description1":"Technology 01",
+        "description2":"NetBots 02",
+        "description3":"Development 03",
+        "description4":"Technological Tips & Tricks 04",
+        "description5":"News and Blogs 05"
+      },
+      {
+        "id":8,
+        "heading":"Simplicity is the soul of efficiency",
+        "description":"NetBots Software company"
+      },
+      {
+        "id":"9",
+        "heading":"NetBots Tags"
+        
+      },
+      {
+        "id":"10",
+        "image":"/BlogImages/p1.avif",
+        "title":"DEVOPS",
+        "date":"2024-05-02",
+        "heading":"DevOps Insights with experts Feedbacks",
+        "profile":"/BlogImages/av.avif",
+        "name":"Syed Saqalin Shah"
+        
+      },
+      {
+        "id":"11",
+         "image":"/BlogImages/p2.avif",
+         "title":"CYBER SECURITY",
+        "date":"2024-05-05",
+        "heading":"Cybe Security 2 hours Session",
+        "profile":"/BlogImages/av.avif",
+        "name":"Syed Saqalin Shah"
+        
+      },
+      {
+        "id":"12",
+         "image":"/BlogImages/p3.avif",
+         "title":"E-COMMERCE",
+        "date":"2024-05-30",
+        "heading":"E-Commerce Insights Session(2 hours)",
+        "profile":"/BlogImages/av.avif",
+        "name":"Touseef Ali"
+      }
+    ]}

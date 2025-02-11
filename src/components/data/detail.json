@@ -1,0 +1,25 @@
+{
+    "DetailData": [
+      {
+        "id": 1,
+        "heading": "Mern Stack",
+        "heading1":"Web Development",
+        "fee": "PKR.3,000",
+        "description": "The MERN stack is a collection of technologies that help developers build robust and scalable web applications using JavaScript. The acronym “MERN” stands for MongoDB, Express, React, and Node.",
+        "image1": "/DetailImages/im1.jpeg"
+      },
+      {
+         "id": 2,
+       "image1": "/DetailImages/av.avif",
+       "name":"Ahme Ali",
+       "designation":"Full Stack Developer",
+       "about":"At our software house, we believe in nurturing talent and empowering individuals to excel in their careers. Today, we’re proud to share the inspiring journey of one of our Full-Stack Developers, who joined us as an aspiring programmer with a dream of mastering the art of web development.With a strong foundation in frontend technologies like HTML, CSS, JavaScript, React.js, and backend frameworks such as Node.js, Express.js, and MongoDB, this developer played a pivotal role in delivering seamless and innovative solutions for our clients. Their exceptional ability to integrate user-centric designs with robust server-side functionality made them a cornerstone of our team.During their time with us, they contributed to building multiple dynamic web applications, including e-commerce platforms, CRM systems, and real-time collaboration tools. By working collaboratively with cross-functional teams and taking ownership of complex challenges, they consistently exceeded expectations, ensuring on-time delivery of high-quality projects."
+      },
+      {
+        "id": 3,
+        "image1": "/certificate/c1.png",
+        "name":"MERNS Stack"
+      }
+    ]
+  }
+  

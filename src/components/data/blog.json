@@ -1,0 +1,33 @@
+{
+    "BlogData": [
+      {
+        "id": 1,
+        "image":"/BlogImages/im1.webp",
+        "title":"Development",
+        "heading": "MERN Stack Web Development",
+        "description":"The MERN stack, comprising MongoDB, Express.js, React.js, and Node.js, is a powerful framework for building full-stack web applications. MongoDB offers flexible, JSON-like data storage. Express.js is a minimalist framework for building robust web applications and APIs. React.js allows for dynamic and interactive user interfaces. Node.js provides a scalable, efficient JavaScript runtime for server-side development. Together, these technologies create a cohesive ecosystem for modern web application development.",
+        "pimage":"/BlogImages/av.avif",
+        "name":"Saqlain Shah",
+        "date":"january 14,2025"
+      },
+      {
+        "id": 2,
+        "image":"/BlogImages/im1.webp",
+        "title":"Development",
+        "heading": "MERN Stack Web Development",
+        "description":"The MERN stack, comprising MongoDB, Express.js, React.js, and Node.js, is a powerful framework for building full-stack web applications. MongoDB offers flexible, JSON-like data storage. Express.js is a minimalist framework for building robust web applications and APIs. React.js allows for dynamic and interactive user interfaces. Node.js provides a scalable, efficient JavaScript runtime for server-side development. Together, these technologies create a cohesive ecosystem for modern web application development.",
+        "pimage":"/BlogImages/av.avif",
+        "name":"Saqlain Shah",
+        "date":"january 14,2025"
+      },
+      {
+        "id": 3,
+        "image":"/BlogImages/im1.webp",
+        "title":"Development",
+        "heading": "MERN Stack Web Development",
+        "description":"The MERN stack, comprising MongoDB, Express.js, React.js, and Node.js, is a powerful framework for building full-stack web applications. MongoDB offers flexible, JSON-like data storage. Express.js is a minimalist framework for building robust web applications and APIs. React.js allows for dynamic and interactive user interfaces. Node.js provides a scalable, efficient JavaScript runtime for server-side development. Together, these technologies create a cohesive ecosystem for modern web application development.",
+        "pimage":"/BlogImages/av.avif",
+        "name":"Saqlain Shah",
+        "date":"january 14,2025"
+      }
+    ]}

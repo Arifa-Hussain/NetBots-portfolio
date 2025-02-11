@@ -1,0 +1,41 @@
+.accordion-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align all content to the left */
+    padding: 20px;
+    width: 100%; /* Adjust width as needed */
+    margin: 0 auto;
+  }
+  
+  .accordion-item {
+    width: 100%; /* Ensure accordions span the full width */
+    margin-bottom: 10px; /* Add spacing between accordions */
+  }
+  
+  .MuiAccordionSummary-content {
+    text-align: left; /* Align accordion headers to the left */
+  }
+  
+  .MuiAccordionDetails-root {
+    text-align: left; /* Align accordion details to the left */
+  }
+  
+  h3 {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #333; /* Adjust color as needed */
+  }
+  
+  ul {
+    padding-left: 20px; /* Add indentation for list items */
+  }
+  
+  li {
+    margin-bottom: 10px; /* Add spacing between list items */
+  }
+  
+  p {
+    margin: 10px 0;
+    line-height: 1.5; /* Improve readability */
+  }
+  

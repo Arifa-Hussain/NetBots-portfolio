@@ -1,0 +1,70 @@
+{
+    "skillData": [
+      {
+        "id": 1,
+        "image": "/ServicesImage/im1.jpeg",
+        "heading": "Mern Stack Web Development"
+      },
+      {
+        "id": 2,
+        "image": "/ServicesImage/im2.jpeg",
+        "heading": "Digital Marketing"
+      },
+      {
+        "id": 3,
+        "image": "/ServicesImage/im3.jpeg",
+        "heading": "Graphic Designing"
+      },
+      {
+        "id": 4,
+        "image": "/ServicesImage/icn4.png",
+        "description": "Limited Seats"
+      },
+      {
+        "id": 5,
+        "image": "/ServicesImage/icn1.png",
+        "description": "3 months"
+      },
+      {
+        "id": 6,
+        "image": "/ServicesImage/icn2.png",
+        "description": "Certificate Completion"
+      },
+      {
+        "id": 7,
+        "image": "/ServicesImage/icn3.png",
+        "description": "3k"
+      },
+      {
+        "id": 5,
+        "image": "/ServicesImage/im4.jpeg",
+        "description": "Python Programming"
+      },
+      {
+        "id": 6,
+        "image": "/ServicesImage/im5.jpeg",
+        "description": "CIT"
+      },
+      {
+        "id": 7,
+        "image": "/ServicesImage/im6.jpeg",
+        "description": "UI/UX Designing"
+      },
+      {
+        "id": 8,
+        "image": "/ServicesImage/im7.jpeg",
+        "description": "Flutter App Development"
+      },
+      {
+        "id": 9,
+        "image": "/ServicesImage/im8.jpeg",
+        "description": "C++ Programming"
+      },
+      {
+        "id": 10,
+        "image": "/ServicesImage/im9.jpeg",
+        "description": "Scratch Programming"
+      }
+    ]
+  }
+  

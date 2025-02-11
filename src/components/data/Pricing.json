@@ -1,0 +1,56 @@
+{
+  "PricingData": [
+    {
+      "id": "1",
+      "title": "Basic Website Plan",
+      "price": 199,
+      "features": [
+        " Responsive Design",
+        " 5 Pages",
+        " Basic SEO Setup",
+        "E-commerce Functionality",
+        "Advanced Analytics"
+      ],
+      "actionText": "Get Started"
+    },
+    {
+      "id": "2",
+      "title": "Mobile App Plan",
+      "price": 499,
+      "features": [
+        " Cross-Platform Compatibility",
+        " User Authentication",
+        "Basic Push Notifications",
+        "App Store Deployment",
+        "Advanced Integrations"
+      ],
+      "actionText": "Get Started"
+    },
+    {
+      "id": "3",
+      "title": "Digital Marketing Plan",
+      "price": 299,
+      "features": [
+        "Social Media Management",
+        "10 Ad Campaigns",
+        "Email Marketing",
+        "SEO Optimization",
+        "Content Creation"
+      ],
+      "actionText": "Get Started"
+    },
+    {
+      "id": "4",
+      "title": "Premium Custom Solution",
+      "price": 999,
+      "features": [
+        "Website + Mobile App Development",
+        "E-commerce Integration",
+        "Advanced Analytics",
+        "Custom Features",
+        "Dedicated Support"
+      ],
+      "actionText": "Get Started"
+    }
+  ]
+}
