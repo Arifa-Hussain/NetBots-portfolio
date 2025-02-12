@@ -6,19 +6,18 @@ import Slider2 from "../slider2/page";
 import homeJson from "../data/home.json";
 import HeroSection from "../Herosection";
 import TechStack from "../TeckStack";
-import LogoAnimation from "../Skeleton";
 
 const Home: React.FC = () => {
   // Access homeData safely
   const homeData = homeJson?.homeData || [];
   // Define the lastSection data safely
-  const lastSection = homeData[homeData.length - 1] || {
-    heading: "",
-    description: "",
-    description2: "",
-    description3: "",
-    image4: "/homeImages/defaultImage.jpg",
-  };
+  // const lastSection = homeData[homeData.length - 1] || {
+  //   heading: "",
+  //   description: "",
+  //   description2: "",
+  //   description3: "",
+  //   image4: "/homeImages/defaultImage.jpg",
+  // };
 
   return (
     <>
@@ -607,7 +606,8 @@ const Home: React.FC = () => {
     
   </Box>
 </Box>
-<Container maxWidth="false" disableGutters sx={{ position: "relative" }}>
+<Container maxWidth={false} disableGutters sx={{ position: "relative" }}>
+
       {/* <LogoAnimation /> */}
       <Box
         sx={{

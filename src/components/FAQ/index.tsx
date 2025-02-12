@@ -1,4 +1,4 @@
-import React from 'react';
+
 import MuiAccordion from '@mui/material/Accordion'; // Renamed to avoid conflict
 import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';

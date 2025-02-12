@@ -1,29 +1,29 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { Box } from "@mui/material";
 
 const LogoAnimation = () => {
-  const canvasRef = useRef(null);
+  const canvasRef = useRef<HTMLCanvasElement | null>(null);
 
-  // Set up the canvas animation when the component mounts
   useEffect(() => {
     const canvas = canvasRef.current;
+    if (!canvas) return; // Ensure canvas is not null
     const ctx = canvas.getContext("2d");
+    if (!ctx) return; // Ensure context is available
 
     // Set initial canvas size
     const setCanvasSize = () => {
+      if (!canvas) return;
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
     };
 
-    setCanvasSize(); // Set the initial size
-
-    // Event listener to resize canvas on window resize
+    setCanvasSize();
     window.addEventListener("resize", setCanvasSize);
 
-    // Dot positions (relative to the center)
     const centerX = canvas.width / 2;
     const centerY = canvas.height / 2;
-    const dotPositions = [
+
+    const dotPositions: { x: number; y: number }[] = [
       { x: 0, y: -90 },
       { x: 0, y: -30 },
       { x: -20, y: -60 },
@@ -44,7 +44,7 @@ const LogoAnimation = () => {
       { x: 75, y: 30 },
     ];
 
-    const connections = [
+    const connections: [number, number][] = [
       [0, 2],
       [2, 11],
       [0, 3],
@@ -68,12 +68,11 @@ const LogoAnimation = () => {
       [6, 1],
     ];
 
-    function drawDot(x, y, size = 8) {
+    function drawDot(x: number, y: number, size: number = 8) {
+      if (!ctx) return;
       const largerDotsIndices = [0, 1, 8, 7, 9, 10, 11, 12, 13];
       const smallerDotsIndices = [2, 3, 4, 5, 6, 14, 15, 16, 17];
-      const index = dotPositions.findIndex(
-        (dot) => dot.x === x && dot.y === y
-      );
+      const index = dotPositions.findIndex((dot) => dot.x === x && dot.y === y);
 
       if (largerDotsIndices.includes(index)) {
         size = 14;
@@ -84,27 +83,26 @@ const LogoAnimation = () => {
 
       ctx.beginPath();
       ctx.arc(centerX + x, centerY + y, size, 0, Math.PI * 2);
-      ctx.fillStyle = " #2A327D"
+      ctx.fillStyle = "#2A327D";
       ctx.fill();
     }
 
-    function drawLine(x1, y1, x2, y2) {
+    function drawLine(x1: number, y1: number, x2: number, y2: number) {
+      if (!ctx) return;
       ctx.beginPath();
       ctx.moveTo(centerX + x1, centerY + y1);
       ctx.lineTo(centerX + x2, centerY + y2);
-      ctx.strokeStyle = " #2A327D"
+      ctx.strokeStyle = "#2A327D";
       ctx.lineWidth = 6;
       ctx.stroke();
     }
 
-    // Function to animate the connections
     function animateConnections() {
       let step = 0;
       const delay = 100;
 
       function drawNextConnection() {
-        if (step >= connections.length) return;
-
+        if (!ctx || step >= connections.length) return;
         const [startIdx, endIdx] = connections[step];
         const start = dotPositions[startIdx];
         const end = dotPositions[endIdx];
@@ -118,21 +116,17 @@ const LogoAnimation = () => {
       drawNextConnection();
     }
 
-    // Function to initialize the canvas and start drawing
     function init() {
-      ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear the canvas
-
-      // Draw all dots
+      if (!ctx) return;
+      ctx.clearRect(0, 0, canvas!.width, canvas!.height);
       dotPositions.forEach((dot) => drawDot(dot.x, dot.y));
-
-      // Animate the connections
       animateConnections();
     }
+    
 
-    init(); // Initialize the animation
+    init();
 
     return () => {
-      // Clean up the event listener when the component unmounts
       window.removeEventListener("resize", setCanvasSize);
     };
   }, []);
@@ -145,8 +139,7 @@ const LogoAnimation = () => {
         justifyContent: "center",
         alignItems: "center",
         height: "100vh",
-        backgroundColor:"white"
-       
+        backgroundColor: "white",
       }}
     >
       <canvas ref={canvasRef}></canvas>

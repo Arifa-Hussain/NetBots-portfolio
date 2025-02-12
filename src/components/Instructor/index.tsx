@@ -1,7 +1,7 @@
 'use client';
 import React, { useState, useEffect } from "react";
-import { Box, Typography, IconButton, Button, Avatar, Grid } from "@mui/material";
-import { ArrowForwardIos } from "@mui/icons-material";
+import { Box, Typography, IconButton,Avatar, Grid } from "@mui/material";
+// import { ArrowForwardIos } from "@mui/icons-material";
 
 const Instructor = () => {
   const [selectedItem, setSelectedItem] = useState<number>(1); // State to track the selected item (1 or 2)

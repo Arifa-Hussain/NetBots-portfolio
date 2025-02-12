@@ -1,14 +1,13 @@
-import React from 'react';
 import MuiAccordion from '@mui/material/Accordion'; // Renamed to avoid conflict
 import AccordionDetails from '@mui/material/AccordionDetails';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+// import AccordionSummary from '@mui/material/AccordionSummary';
+// import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import accordionData from '../data/Accordion.json'; // Import JSON file
 import { Typography } from '@mui/material';
 import './Accordion.css'; // Import CSS for styling
 
 const Accordion1 = () => {
-  const renderDescription = (description, id) => {
+  const renderDescription = (_description: string, id: number) => {
     if (id === 1) {
       return (
         <>
@@ -64,19 +63,18 @@ const Accordion1 = () => {
           defaultExpanded={index === 0} // Open the first accordion by default
         >
           <Typography
-                  variant="h5"
-                  sx={{
-                    color: "#2A327D",
-                    fontWeight: "bold",
-                    fontFamily: "Poppins, sans-serif",
-                    textAlign:"left",
-                    mb: 2, // Added margin-bottom for spacing
-                       marginTop:"5px"
-                  }}
-                >
-                 {item.heading}
-              
-                </Typography>
+            variant="h5"
+            sx={{
+              color: "#2A327D",
+              fontWeight: "bold",
+              fontFamily: "Poppins, sans-serif",
+              textAlign: "left",
+              mb: 2, // Added margin-bottom for spacing
+              marginTop: "5px"
+            }}
+          >
+            {item.heading}
+          </Typography>
           <AccordionDetails>
             {renderDescription(item.description, item.id)}
           </AccordionDetails>

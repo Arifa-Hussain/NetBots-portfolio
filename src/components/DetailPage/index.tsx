@@ -1,212 +1,206 @@
-import React, { useEffect, useState } from "react";
-import {
-  Box,
-  Container,
-  Typography,
-  Button,
-  Rating,
-  Grid,
-  Avatar,
-  Chip
-} from "@mui/material";
-import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import { useState, useEffect } from "react";
+import DetailData from "../data/detail.json"; // Import JSON data
+import { useNavigate } from "react-router-dom";
+import { Container, Box, Typography, Button, Rating,Grid } from "@mui/material";
 import { School, AccessTime } from "@mui/icons-material";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+// import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+// import { School, AccessTime } from "@mui/icons-material";
 import { Code as JavaScriptIcon } from "@mui/icons-material";
-import { Html, Css, React as ReactIcon, Code, Api, Security, GitHub, CodeOutlined } from "@mui/icons-material";
-import DetailData from "../data/detail.json"; // Importing the JSON file
-import { useNavigate } from "react-router-dom"; // Importing useNavigate from react-router-dom
+import { Html, Css, Code, Api, Security, GitHub, CodeOutlined } from "@mui/icons-material";
 import Accordion1 from "../Accordion/index";
 import Instructor from "../Instructor/index";
 import JobSuccessStories from "../JobSuccessStories";
 import Faq from "../FAQ";
+import { Chip } from "@mui/material";
 
+// Define the expected type of detail data
+type DetailItem = {
+  id: number;
+  heading?: string;
+  heading1?: string;
+  fee?: string;
+  description?: string;
+  image1: string;
+  name?: string;
+  designation?: string;
+  about?: string;
+};
+
+// Component function
 const DetailPage = () => {
-  const [data, setData] = useState(null); // Initialize as null
+  const [data, setData] = useState<DetailItem[]>([]); // Use an array instead of null
   const navigate = useNavigate(); // Initialize the navigate function
 
   useEffect(() => {
-    // Set the imported JSON data
-    setData(DetailData.DetailData); // Ensure this matches your JSON structure
+    // Set the imported JSON data correctly
+    setData(DetailData.DetailData as DetailItem[]); // Type assertion ensures correct data structure
   }, []);
 
   const handleEnrollNow = () => {
-    // Navigate to the admission form page
     navigate("/admission-form");
   };
 
   return (
     <>
       <Container maxWidth="lg" sx={{ px: { xs: 2, sm: 3, md: 4 } }}>
-        {data?.map((item, index) => (
-          <Box
-            key={item.id} // Ensure `id` is unique in your JSON data
-            sx={{
-              display: "flex",
-              flexDirection: { xs: "column", md: "row" },
-              gap: 4,
-              mt: 5,
-              alignItems: "center",
-            }}
-          >
-            {/* Left Side - This should only appear once */}
-            {index === 0 && (
-              <Box sx={{ flex: 1, textAlign: { xs: "center", md: "left" } }}>
+        {data.length > 0 &&
+          data.map((item: DetailItem, index: number) => (
+            <Box
+              key={item.id}
+              sx={{
+                display: "flex",
+                flexDirection: { xs: "column", md: "row" },
+                gap: 4,
+                mt: 5,
+                alignItems: "center",
+              }}
+            >
+              {/* Left Side - Display only once */}
+              {index === 0 && (
+                <Box sx={{ flex: 1, textAlign: { xs: "center", md: "left" } }}>
                   <Typography
-                                                                           variant="h3"
-                                                                           sx={{
-                                                                             marginBottom:"30px",
-                                                                             fontWeight: 'bold',
-                                                                             fontSize: { xs: '1.8rem', md: '2.5rem' },
-                                                                             lineHeight: 1.2,
-                                                                            
-                                                                           }}
-                                                                         >
-                                                                           <span style={{ fontWeight: 'normal' }}>{item.heading} </span>{' '}
-                                                                           <span
-                                                                             style={{
-                                                                               background:
-                                                                                 'linear-gradient(180deg,rgb(19, 59, 119) 20%, rgba(14, 36, 237, 0) 100%)',
-                                                                               WebkitBackgroundClip: 'text',
-                                                                               WebkitTextFillColor: 'transparent',
-                                                                               fontWeight: 'bold',
-                                                                               
-                                                                             }}
-                                                                           >
-                                                                             {item.heading1}
-                                                                           </span>{' '}
-                                                                           
-                                                                         </Typography>
-                <Typography
-                  variant="h6"
-                  color="primary"
-                  sx={{ mb: 2 }}
-                >
-                  Fee: {item.fee}
-                </Typography>
-                <Box
-                  sx={{
-                    display: "flex",
-                    alignItems: "center",
-                    mb: 2,
-                    justifyContent: { xs: "center", md: "space-between" },
-                    flexWrap: "wrap",
-                    gap: 2,
-                  }}
-                >
-                  <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-                    <Rating value={4.5} precision={0.5} readOnly sx={{ mr: 1 }} />
-                    <Typography variant="body1">4.5/5 Rating</Typography>
-                  </Box>
-                  <Button
-                    variant="contained"
+                    variant="h3"
                     sx={{
-                      backgroundColor: "#2A327D",
-                      color: "white",
+                      marginBottom: "30px",
                       fontWeight: "bold",
-                      borderRadius: "8px",
-                      fontSize: "12px",
-                      px: 3,
+                      fontSize: { xs: "1.8rem", md: "2.5rem" },
+                      lineHeight: 1.2,
+                    }}
+                  >
+                    <span style={{ fontWeight: "normal" }}>{item.heading} </span>{" "}
+                    <span
+                      style={{
+                        background:
+                          "linear-gradient(180deg,rgb(19, 59, 119) 20%, rgba(14, 36, 237, 0) 100%)",
+                        WebkitBackgroundClip: "text",
+                        WebkitTextFillColor: "transparent",
+                        fontWeight: "bold",
+                      }}
+                    >
+                      {item.heading1}
+                    </span>
+                  </Typography>
+                  <Typography variant="h6" color="primary" sx={{ mb: 2 }}>
+                    Fee: {item.fee}
+                  </Typography>
+                  <Box
+                    sx={{
                       display: "flex",
                       alignItems: "center",
+                      mb: 2,
+                      justifyContent: { xs: "center", md: "space-between" },
+                      flexWrap: "wrap",
+                      gap: 2,
                     }}
-                    onClick={handleEnrollNow}
                   >
-                    Enroll Now
-                    <ArrowBackIcon sx={{ transform: "rotate(180deg)", marginLeft: "8px" }} />
-                  </Button>
+                    <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+                      <Rating value={4.5} precision={0.5} readOnly sx={{ mr: 1 }} />
+                      <Typography variant="body1">4.5/5 Rating</Typography>
+                    </Box>
+                    <Button
+                      variant="contained"
+                      sx={{
+                        backgroundColor: "#2A327D",
+                        color: "white",
+                        fontWeight: "bold",
+                        borderRadius: "8px",
+                        fontSize: "12px",
+                        px: 3,
+                        display: "flex",
+                        alignItems: "center",
+                      }}
+                      onClick={handleEnrollNow}
+                    >
+                      Enroll Now
+                      <ArrowBackIcon sx={{ transform: "rotate(180deg)", marginLeft: "8px" }} />
+                    </Button>
+                  </Box>
+                  <Typography variant="body1" color="text.secondary" sx={{ mb: 3 }}>
+                    {item.description}
+                  </Typography>
+                  <Box
+                    sx={{
+                      display: "flex",
+                      gap: 2,
+                      justifyContent: { xs: "center", md: "space-between" },
+                      flexWrap: "wrap",
+                      mb: 4,
+                    }}
+                  >
+                    <Box
+                      sx={{
+                        display: "flex",
+                        alignItems: "center",
+                        gap: 1,
+                        backgroundColor: "#f5f5f5",
+                        padding: 2,
+                        borderRadius: "8px",
+                        flex: 1,
+                        minWidth: "150px",
+                      }}
+                    >
+                      <School color="primary" />
+                      <Typography variant="body1">Courses Covered</Typography>
+                    </Box>
+                    <Box
+                      sx={{
+                        display: "flex",
+                        alignItems: "center",
+                        gap: 1,
+                        backgroundColor: "#f5f5f5",
+                        padding: 2,
+                        borderRadius: "8px",
+                        flex: 1,
+                        minWidth: "150px",
+                      }}
+                    >
+                      <School color="primary" />
+                      <Typography variant="body1">Certifications</Typography>
+                    </Box>
+                    <Box
+                      sx={{
+                        display: "flex",
+                        alignItems: "center",
+                        gap: 1,
+                        backgroundColor: "#f5f5f5",
+                        padding: 2,
+                        borderRadius: "8px",
+                        flex: 1,
+                        minWidth: "150px",
+                      }}
+                    >
+                      <AccessTime color="primary" />
+                      <Typography variant="body1">Duration: 4 months</Typography>
+                    </Box>
+                  </Box>
                 </Box>
-                <Typography
-                  variant="body1"
-                  color="text.secondary"
-                  sx={{
-                    mb: 3,
-                  }}
-                >
-                  {item.description}
-                </Typography>
-
+              )}
+              {/* Right Side - Image (display only once) */}
+              {index === 0 && (
                 <Box
                   sx={{
+                    flex: 1,
                     display: "flex",
-                    gap: 2,
-                    justifyContent: { xs: "center", md: "space-between" },
-                    flexWrap: "wrap",
-                    mb: 4,
+                    justifyContent: "center",
+                    alignItems: "center",
+                    mt: { xs: 3, md: 0 },
                   }}
                 >
-                  <Box
-                    sx={{
-                      display: "flex",
-                      alignItems: "center",
-                      gap: 1,
-                      backgroundColor: "#f5f5f5",
-                      padding: 2,
-                      borderRadius: "8px",
-                      flex: 1,
-                      minWidth: "150px", // Ensures a minimum width for smaller screens
+                  <img
+                    src={item.image1}
+                    alt={item.heading || "Detail Image"}
+                    style={{
+                      width: "100%",
+                      maxWidth: "400px",
+                      borderRadius: "12px",
+                      objectFit: "cover",
                     }}
-                  >
-                    <School color="primary" />
-                    <Typography variant="body1">Courses Covered</Typography>
-                  </Box>
-                  <Box
-                    sx={{
-                      display: "flex",
-                      alignItems: "center",
-                      gap: 1,
-                      backgroundColor: "#f5f5f5",
-                      padding: 2,
-                      borderRadius: "8px",
-                      flex: 1,
-                      minWidth: "150px",
-                    }}
-                  >
-                    <School color="primary" />
-                    <Typography variant="body1">Certifications</Typography>
-                  </Box>
-                  <Box
-                    sx={{
-                      display: "flex",
-                      alignItems: "center",
-                      gap: 1,
-                      backgroundColor: "#f5f5f5",
-                      padding: 2,
-                      borderRadius: "8px",
-                      flex: 1,
-                      minWidth: "150px",
-                    }}
-                  >
-                    <AccessTime color="primary" />
-                    <Typography variant="body1">Duration: 4 months</Typography>
-                  </Box>
+                  />
                 </Box>
-              </Box>
-            )}
-            {/* Right Side - Image (display only once) */}
-            {index === 0 && (
-              <Box
-                sx={{
-                  flex: 1,
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  mt: { xs: 3, md: 0 },
-                }}
-              >
-                <img
-                  src={item.image1}
-                  alt={item.heading}
-                  style={{
-                    width: "100%",
-                    maxWidth: "400px",
-                    borderRadius: "12px",
-                    objectFit: "cover",
-                  }}
-                />
-              </Box>
-            )}
-          </Box>
-        ))}
+              )}
+            </Box>
+          ))}
       </Container>
 
       {/* Overview Section */}
@@ -215,9 +209,7 @@ const DetailPage = () => {
           <Accordion1 />
         </Grid>
       </Container>
-
-      {/* Heading Section */}
-       <Typography
+<Typography
                         variant="h5"
                         sx={{
                           color: "#2A327D",
@@ -230,8 +222,7 @@ const DetailPage = () => {
                         Which Tools and Skills will You Learn in the Program?
                     
                       </Typography>
-
-      <Container maxWidth="lg" sx={{ px: { xs: 2, sm: 3, md: 4 } }}>
+ <Container maxWidth="lg" sx={{ px: { xs: 2, sm: 3, md: 4 } }}>
         {/* Frontend Development Section */}
         <Box
           sx={{

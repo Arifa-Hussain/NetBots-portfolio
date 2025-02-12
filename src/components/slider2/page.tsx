@@ -1,5 +1,5 @@
 'use client';
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { Box, Typography, IconButton } from "@mui/material";
 import { ArrowBackIos, ArrowForwardIos } from "@mui/icons-material";
 
