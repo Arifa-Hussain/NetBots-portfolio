@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import { Typography, Box, Button, Card, CardMedia, CardContent, Grid } from "@mui/material";
 import portifolioData from "../data/portifolio.json";
 
@@ -6,7 +6,7 @@ const Portifolio = () => {
   const [selectedCategory, setSelectedCategory] = useState("Web Applications");
 
   // Map categories to IDs as per JSON
-  const categories = {
+  const categories: Record<string, number[]> = {
     "Web Applications": [2, 3],
     "Mobile Applications": [4, 5],
     "CMS": [6],
@@ -15,9 +15,10 @@ const Portifolio = () => {
   };
 
   // Handle category button click
-  const handleCategoryClick = (category) => {
+  const handleCategoryClick = (category: string) => {
     setSelectedCategory(category);
   };
+  
 
   // Filter projects based on selected category
   const filteredProjects = portifolioData.PortifolioData.filter(

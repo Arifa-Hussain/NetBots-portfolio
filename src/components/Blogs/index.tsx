@@ -1,4 +1,3 @@
-import React from "react";
 import { Typography, Box, Card, CardContent, CardMedia, Grid } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import BlogData from "../data/blog.json";

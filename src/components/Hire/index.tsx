@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { 
   Container, Grid, Typography, Card, CardContent, TextField, 
   Button, Dialog, DialogTitle, DialogContent, DialogActions, Box, MenuItem, InputLabel, FormControl
@@ -8,6 +7,7 @@ import jobs from "../data/hire.json";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { Select } from "@mui/material"; 
+import { useState } from "react";
 
 
 const Hire = () => {
@@ -32,7 +32,9 @@ const Hire = () => {
       fullName: "",
       email: "",
       phone: "",
+      designation:"",
       resume: null,
+    coverLetter: null, 
     },
     validationSchema: validationSchema,
     onSubmit: (values, { resetForm }) => {
@@ -238,7 +240,12 @@ const Hire = () => {
     type="file"
     name="resume"
     accept=".pdf"
-    onChange={(event) => formik.setFieldValue("resume", event.target.files[0])}
+    onChange={(event) => {
+      const files = event.target.files;
+      if (files && files.length > 0) {
+        formik.setFieldValue("resume", files[0]);
+      }
+    }}
     onBlur={formik.handleBlur}
     style={{
       flex: 1, // Fill remaining space
@@ -284,7 +291,12 @@ const Hire = () => {
     type="file"
     name="coverLetter"
     accept=".pdf"
-    onChange={(event) => formik.setFieldValue("coverLetter", event.target.files[0])}
+    onChange={(event) => {
+      const files = event.target.files;
+      if (files && files.length > 0) {
+        formik.setFieldValue("coverLetter", files[0]);
+      }
+    }}
     onBlur={formik.handleBlur}
     style={{
       flex: 1, // Fill remaining space

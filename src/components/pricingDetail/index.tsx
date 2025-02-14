@@ -1,9 +1,7 @@
-import React from "react";
 import {
   Box,
   Grid,
   Typography,
-  Button,
   List,
   ListItem,
   ListItemIcon,
@@ -15,22 +13,34 @@ import {
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import { styled } from "@mui/material/styles";
 import { XCircle } from "lucide-react";
-import pricingDetail from "../data/pricingDetail.json"; // Import JSON data
+import pricingDetailData from "../data/pricingDetail.json"; // Import JSON data
 
-// Styled Components
-const StyledButton = styled(Button)({
-  backgroundColor: "#2A327D",
-  color: "#fff",
-  fontWeight: "bold",
-  padding: "12px 24px",
-  borderRadius: "8px",
-  textTransform: "none",
-  fontFamily: "Poppins, sans-serif",
-  fontSize: "16px",
-  "&:hover": {
-    backgroundColor: "#1E255F",
-  },
-});
+// Define the structure of each section
+interface PricingSection {
+  id: string;
+  title: string;
+  heading: string;
+  description: string;
+  services?: string[];
+  features?: string[];
+  benefits?: string[];
+  exclusions?: string[];
+  buttonText?: string;
+  image?: string;
+  description1?: string;
+  description2?: string;
+  description3?: string;
+  description4?: string;
+  description5?: string;
+}
+
+// Define the Pricing Detail JSON structure
+interface PricingDetailData {
+  pricingDetail: PricingSection[];
+}
+
+// Typecasting JSON data to match the defined structure
+const pricingDetail: PricingDetailData = pricingDetailData as PricingDetailData;
 
 const SectionWrapper = styled(Box)(({ theme }) => ({
   padding: theme.spacing(6, 2),
@@ -47,7 +57,12 @@ const PricingDetail = () => {
 
   // Extract terms and conditions safely
   const termsAndConditions =
-    pricingDetail?.pricingDetail?.find((item) => item.title === "Terms and Conditions") || {};
+    pricingDetail?.pricingDetail?.find((item) => item.title === "Terms and Conditions") ?? {
+      description1: "",
+      description2: "",
+      description3: "",
+      description5: "",
+    };
 
   return (
     <Box sx={{ py: { xs: 4, md: 6 }, px: { xs: 2, md: 4 }, width: "100%", overflowX: "hidden" }}>
@@ -67,14 +82,14 @@ const PricingDetail = () => {
               </Typography>
 
               {/* List rendering function */}
-              {['services', 'features', 'benefits'].map((key) =>
-                section[key] ? (
+              {(["services", "features", "benefits"] as (keyof PricingSection)[]).map((key) =>
+                section[key] && Array.isArray(section[key]) ? (
                   <Box key={key} sx={{ mt: 3 }}>
                     <Typography variant="h6" sx={{ fontWeight: "bold", color: "#2A327D", fontFamily: "Poppins, sans-serif" }}>
                       {key.charAt(0).toUpperCase() + key.slice(1)}:
                     </Typography>
                     <List>
-                      {section[key].map((item, index) => (
+                      {(section[key] as string[]).map((item, index) => (
                         <ListItem key={index} sx={{ justifyContent: "flex-start" }}>
                           <ListItemIcon>
                             <CheckCircleIcon sx={{ color: "#2A327D" }} />
@@ -87,6 +102,7 @@ const PricingDetail = () => {
                 ) : null
               )}
 
+              {/* Exclusions List */}
               {section.exclusions && (
                 <Box sx={{ mt: 3 }}>
                   <Typography variant="h6" sx={{ fontWeight: "bold", color: "#D32F2F", fontFamily: "Poppins, sans-serif" }}>
@@ -119,7 +135,7 @@ const PricingDetail = () => {
       {/* Terms and Conditions Section */}
       {Object.keys(termsAndConditions).length > 0 && (
         <Paper elevation={0} sx={{ p: 4, backgroundColor: "transparent", textAlign: "left" }}>
-          {termsAndConditions.description1 && (
+          {termsAndConditions?.description1 && (
             <Typography variant="body1" sx={{ mb: 2, color: "#555", fontFamily: "Inter, sans-serif" }}>
               {termsAndConditions.description1}
             </Typography>
@@ -127,7 +143,8 @@ const PricingDetail = () => {
           <List>
             {Object.entries(termsAndConditions)
               .filter(([key]) => key.startsWith("description") && key !== "description1" && key !== "description5")
-              .map(([key, value], index) => (
+              .map(([, value], index) => ( // Ignore the first element explicitly
+                
                 <ListItem key={index} sx={{ pl: 0 }}>
                   <ListItemIcon sx={{ minWidth: "32px" }}>
                     <CheckCircleIcon sx={{ color: "#2A327D" }} />

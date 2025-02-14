@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { TextField, Button, Typography, Box, Container } from '@mui/material'; 
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
@@ -14,12 +14,12 @@ const RegistrationForm = () => {
 
   const navigate = useNavigate();
 
-  const handleChange = (e) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log('Form Submitted:', formData);
     // Perform additional actions like API calls
@@ -29,10 +29,6 @@ const RegistrationForm = () => {
     navigate('/login');
   };
 
-  const handleEnrollNow = () => {
-    // Navigate to admission form page (already defined)
-    navigate("/admission-form");
-  };
 
   return (
     <Container maxWidth="sm" sx={{ padding: 4, display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>

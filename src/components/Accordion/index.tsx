@@ -1,7 +1,5 @@
 import MuiAccordion from '@mui/material/Accordion'; // Renamed to avoid conflict
 import AccordionDetails from '@mui/material/AccordionDetails';
-// import AccordionSummary from '@mui/material/AccordionSummary';
-// import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import accordionData from '../data/Accordion.json'; // Import JSON file
 import { Typography } from '@mui/material';
 import './Accordion.css'; // Import CSS for styling
