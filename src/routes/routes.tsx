@@ -22,7 +22,7 @@ const routes = [
   { path: "/blogs", element: <Blogs /> },
   { path: "/blog-detail", element: <BlogDetail /> },
   { path: "/services/:id", element: <ServicesDetail /> },
-  { path: "/portfolio", element: <Portfolio /> }, // Fixed spelling
+  { path: "/portifolio", element: <Portfolio /> },
   { path: "/skill", element: <Skill /> },
   { path: "/hire", element: <Career /> },
   { path: "/detail-page", element: <DetailPage /> },

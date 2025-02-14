@@ -71,9 +71,7 @@ const PricingDetail = () => {
           <Grid container spacing={4} alignItems="center" direction={isMobile ? "column" : index % 2 === 0 ? "row" : "row-reverse"}>
             {/* Left Side - Text */}
             <Grid item xs={12} md={6}>
-              <Typography variant="h5" sx={{ color: "#2A327D", fontWeight: "bold", textAlign: "left", fontFamily: "Poppins, sans-serif" }}>
-                {section.title}
-              </Typography>
+             
               <Typography variant="h3" sx={{ fontWeight: "bold", mt: 1, textAlign: "left", fontFamily: "Poppins, sans-serif" }}>
                 {section.heading}
               </Typography>
@@ -123,7 +121,7 @@ const PricingDetail = () => {
             </Grid>
 
             {/* Right Side - Image */}
-            <Grid item xs={12} md={6}>
+            <Grid item xs={12} md={6}   >
               {section.title !== "Terms and Conditions" && (
                 <Box component="img" src={section.image || "/placeholder.jpg"} alt={section.heading} sx={{ width: "100%", height: "auto", borderRadius: "8px", objectFit: "cover" }} />
               )}
@@ -135,6 +133,10 @@ const PricingDetail = () => {
       {/* Terms and Conditions Section */}
       {Object.keys(termsAndConditions).length > 0 && (
         <Paper elevation={0} sx={{ p: 4, backgroundColor: "transparent", textAlign: "left" }}>
+          <Typography variant="h6" align="left" sx={{ mt: 2, color: "#555", textAlign: "left", fontFamily: "Inter, sans-serif" }}>
+          Terms and Conditions
+</Typography>
+
           {termsAndConditions?.description1 && (
             <Typography variant="body1" sx={{ mb: 2, color: "#555", fontFamily: "Inter, sans-serif" }}>
               {termsAndConditions.description1}
