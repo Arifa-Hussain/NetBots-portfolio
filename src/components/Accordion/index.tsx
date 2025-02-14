@@ -1,11 +1,13 @@
-import MuiAccordion from '@mui/material/Accordion'; // Renamed to avoid conflict
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
-import accordionData from '../data/Accordion.json'; // Import JSON file
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { Typography } from '@mui/material';
+import accordionData from '../data/Accordion.json'; // Import JSON file
 import './Accordion.css'; // Import CSS for styling
 
 const Accordion1 = () => {
-  const renderDescription = (_description: string, id: number) => {
+  const renderDescription = (id: number) => {
     if (id === 1) {
       return (
         <>
@@ -55,28 +57,24 @@ const Accordion1 = () => {
   return (
     <div className="accordion-container">
       {accordionData.AccordionData.map((item, index) => (
-        <MuiAccordion
-          key={item.id} // Ensure `id` is unique in your JSON data
-          className="accordion-item"
-          defaultExpanded={index === 0} // Open the first accordion by default
-        >
-          <Typography
-            variant="h5"
-            sx={{
-              color: "#2A327D",
-              fontWeight: "bold",
-              fontFamily: "Poppins, sans-serif",
-              textAlign: "left",
-              mb: 2, // Added margin-bottom for spacing
-              marginTop: "5px"
-            }}
-          >
-            {item.heading}
-          </Typography>
+        <Accordion key={item.id} className="accordion-item" defaultExpanded={index === 0}>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <Typography
+              variant="h5"
+              sx={{
+                color: "#2A327D",
+                fontWeight: "bold",
+                fontFamily: "Poppins, sans-serif",
+                textAlign: "left",
+              }}
+            >
+              {item.heading}
+            </Typography>
+          </AccordionSummary>
           <AccordionDetails>
-            {renderDescription(item.description, item.id)}
+            {renderDescription(item.id)}
           </AccordionDetails>
-        </MuiAccordion>
+        </Accordion>
       ))}
     </div>
   );

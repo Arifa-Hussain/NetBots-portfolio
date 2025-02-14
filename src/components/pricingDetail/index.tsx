@@ -83,7 +83,7 @@ const PricingDetail = () => {
               {(["services", "features", "benefits"] as (keyof PricingSection)[]).map((key) =>
                 section[key] && Array.isArray(section[key]) ? (
                   <Box key={key} sx={{ mt: 3 }}>
-                    <Typography variant="h6" sx={{ fontWeight: "bold", color: "#2A327D", fontFamily: "Poppins, sans-serif" }}>
+                    <Typography variant="h6" sx={{ fontWeight: "bold", color: "#2A327D", fontFamily: "Poppins, sans-serif",textAlign: "left" }}>
                       {key.charAt(0).toUpperCase() + key.slice(1)}:
                     </Typography>
                     <List>
@@ -103,12 +103,12 @@ const PricingDetail = () => {
               {/* Exclusions List */}
               {section.exclusions && (
                 <Box sx={{ mt: 3 }}>
-                  <Typography variant="h6" sx={{ fontWeight: "bold", color: "#D32F2F", fontFamily: "Poppins, sans-serif" }}>
+                  <Typography variant="h6" sx={{ fontWeight: "bold", color: "#D32F2F", fontFamily: "Poppins, sans-serif",textAlign: "left"}}>
                     Exclusions:
                   </Typography>
                   <List>
                     {section.exclusions.map((item, index) => (
-                      <ListItem key={index} sx={{ display: "flex", alignItems: "center" }}>
+                      <ListItem key={index} sx={{ display: "flex" }}>
                         <ListItemIcon>
                           <XCircle size={22} color="red" />
                         </ListItemIcon>
@@ -133,7 +133,7 @@ const PricingDetail = () => {
       {/* Terms and Conditions Section */}
       {Object.keys(termsAndConditions).length > 0 && (
         <Paper elevation={0} sx={{ p: 4, backgroundColor: "transparent", textAlign: "left" }}>
-          <Typography variant="h6" align="left" sx={{ mt: 2, color: "#555", textAlign: "left", fontFamily: "Inter, sans-serif" }}>
+          <Typography variant="h6" align="left" sx={{ mt: 2, color: "#2A327D",fontWeight:"bold", textAlign: "left", fontFamily: "Inter, sans-serif" }}>
           Terms and Conditions
 </Typography>
 
