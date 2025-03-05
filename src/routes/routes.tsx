@@ -1,32 +1,16 @@
 // src/routes/routes.tsx
-import { 
-  Home, 
-  AdmissionForm, 
-  Services, 
-  Pricing, 
-  Blogs, 
-  BlogDetail, 
-  ServicesDetail, 
-  DetailPage,
-  Portfolio,
-  Skill,
-  Career,
-  PricingDetail
-} from "../components/LazyComponents";
+import Adventures from "../components/Adventure/page";
+import Eat from "../components/Eat and Drink";
+import Hotels from "../components/Hotels";
+import Tours from "../components/Tours";
 
 const routes = [
-  { path: "/", element: <Home /> },
-  { path: "/admission-form", element: <AdmissionForm /> },
-  { path: "/services", element: <Services /> },
-  { path: "/pricing", element: <Pricing /> },
-  { path: "/blogs", element: <Blogs /> },
-  { path: "/Blog-Detail", element: <BlogDetail /> },
-  { path: "/services/:id", element: <ServicesDetail /> },
-  { path: "/portifolio", element: <Portfolio /> },
-  { path: "/skill", element: <Skill /> },
-  { path: "/hire", element: <Career /> },
-  { path: "/detail-page", element: <DetailPage /> },
-  { path: "/pricing/:id", element: <PricingDetail /> }
+  // { path: "/", element: <Home /> },
+  { path: "/tour", element: <Tours/> },
+  { path: "/hotels", element: <Hotels/> },
+  { path: "/adventures", element: <Adventures/> },
+  { path: "/eat", element: <Eat/> },
+
 ];
 
 export default routes;

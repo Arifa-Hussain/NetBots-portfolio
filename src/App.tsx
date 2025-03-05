@@ -1,9 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import routes from "./routes/routes";
 import Header from "./components/Nav/page";
-import Footer from "./components/Footer/page";
-import "./App.css";
-import LoadingState from "./components/LoadingState";
+// import LoadingState from "./components/LoadingState";
 import { Suspense } from "react";
 
 function App() {
@@ -11,7 +9,7 @@ function App() {
     <Router>
       <Header /> {/* Include the Header component */}
       <main>
-        <Suspense fallback={<LoadingState />}>
+        <Suspense>
           <Routes>
             {routes.map((route, index) => (
               <>
@@ -22,7 +20,7 @@ function App() {
           </Routes>
         </Suspense>
       </main>
-      <Footer /> {/* Include the Footer component */}
+     
     </Router>
   );
 }
